@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+body {
+    background: #313bd0;
+    font-family: "Poppins", sans-serif
+}
+
+/* Demo .main position */
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+/* /Demo .main position */
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+.page-404__number {
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn.btn__arrow {
+    background: transparent;
+    padding: 15px 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #d4fdf4;
+    display: inline-block;
+}
+.btn.btn__arrow svg {
+    fill: #d4fdf4;
+    width: 34px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.btn__arrow svg {
+    transition: transform 0.3s ease-out;
+}
+.btn__arrow:hover svg {
+    transform: translateX(8px);
+}
+
+.p--404 {
+    font-weight: 600;
+    font-size: 22px;
+    color: #d4fdf4;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+.page-404__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .page-404__text {
+        flex-direction: column;
+    }
+    .page-404__number {
+        margin-bottom: 20px;
+    }
+}
